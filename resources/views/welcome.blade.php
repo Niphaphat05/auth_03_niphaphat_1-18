@@ -155,7 +155,7 @@
 
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Welcome To NICHA CHAROEN YING</h3>
+            <h3>WELCOME TO NICHA CHAROEN YING</h3>
             <p>ยินดีต้องรับเข้าสู่ เว็บไซต์ของร้านณิชาเจริญยิ่ง ร้านที่มีอุปกรณ์ ไฟฟ้าและเครื่องมือช่างมากมายที่พร้อม<br>จะอำนวยความสะดวกความต้องการ และพร้อมที่จะบิรการทุกท่าน</p>
           </div>
           <!--
