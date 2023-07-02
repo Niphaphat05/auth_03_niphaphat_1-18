@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Admin IT-Shop</title>
+    <title>NICHA SHOP</title>
 
     <meta name="description" content="" />
 
@@ -46,6 +46,7 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
@@ -58,7 +59,7 @@
                         <img src="{{ asset('backend/assets/img/logoicon.png')}}" alt="">
                         </span>
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">
-                            IT Shop
+                        NICHA Shop
                         </span>
                     </a>
 
@@ -105,7 +106,7 @@
 
                     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
 
-                        Admin IT-Shop
+                        ADMIN NICHA
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
 
@@ -146,10 +147,16 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();"
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Log Out</span>
                                         </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                        </form>
                                     </li>
                                 </ul>
                             </li>
